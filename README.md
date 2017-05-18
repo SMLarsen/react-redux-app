@@ -31,3 +31,5 @@ Sort Todo List
   * Sort todo list by:
     * Due Date
     * Eisenhower Matrix
+
+Note: Initial data store will be in memory array.  
