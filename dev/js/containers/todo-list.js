@@ -2,18 +2,18 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {selectUser} from '../actions/index';
+import {selectTodo} from '../actions/index';
 
-class UserList extends Component {
+class todoList extends Component {
 
   createListItems() {
-    return this.props.users.map((user) => {
+    return this.props.todos.map((todo) => {
       return (
         <li
-          key={user.id}
-          onClick={() => this.props.selectUser(user)}
+          key={todo.id}
+          onClick={() => this.props.selectTodo(todo)}
         >
-          {user.first} {user.last}
+          {todo.name}
         </li>
       )
     })
@@ -31,12 +31,12 @@ class UserList extends Component {
 
 function mapStateToProps(state) {
   return {
-    users: state.users
+    todos: state.todos
   };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({selectUser: selectUser}, dispatch);
+  return bindActionCreators({selectTodo: selectTodo}, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserList);
+export default connect(mapStateToProps, mapDispatchToProps)(todoList);

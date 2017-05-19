@@ -7,7 +7,7 @@ export default function() {
         dueDate: "2017-05-22",
         doneDate: "",
         description: "Code something with React and Redux",
-        status: "Pending",
+        completed: false,
         urgency: 8,
         importance: 6,
         archived: false
@@ -18,7 +18,7 @@ export default function() {
         dueDate: "2017-05-22",
         doneDate: "",
         description: "Go to bed at decent time",
-        status: "Pending",
+        completed: false,
         urgency: 4,
         importance: 10,
         archived: false
@@ -29,7 +29,7 @@ export default function() {
         dueDate: "2017-05-22",
         doneDate: "2017-05-22",
         description: "Eat most important meal of the day",
-        status: "Completed",
+        completed: true,
         urgency: 5,
         importance: 3,
         archived: false
@@ -40,7 +40,7 @@ export default function() {
         dueDate: "2017-05-22",
         doneDate: "",
         description: "Eat something",
-        status: "Pending",
+        completed: false,
         urgency: 8,
         importance: 6,
         archived: false

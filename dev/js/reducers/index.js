@@ -1,11 +1,11 @@
 /*jshint esversion: 6 */
 import {combineReducers} from 'redux';
-import UserReducer from './reducer-users';
-import ActiveUserReducer from './reducer-active-user';
+import TodoReducer from './reducer-todos';
+import ActiveTodoReducer from './reducer-active-todo';
 
 const allReducers = combineReducers({
-  users: UserReducer,
-  activeUser: ActiveUserReducer
+  todos: TodoReducer,
+  activeTodo: ActiveTodoReducer
 });
 
 export default allReducers;

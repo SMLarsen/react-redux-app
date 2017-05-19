@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
-export const selectUser = (user) => {
-  console.log('You clicked on user:', user.first, user.last);
+export const selectTodo = (todo) => {
+  console.log(todo);
   return {
-    type: "USER_SELECTED",
-    payload: user
-  }
+    type: "TODO_SELECTED",
+    payload: todo
+  };
 };

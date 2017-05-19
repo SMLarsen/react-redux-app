@@ -9,8 +9,6 @@ import App from './components/app';
 
 const store = createStore(allReducers);
 
-// console.log(store);
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

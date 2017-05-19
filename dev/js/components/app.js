@@ -1,16 +1,16 @@
 /*jshint esversion: 6 */
 import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetail from '../containers/user-detail';
+import TodoList from '../containers/todo-list';
+import TodoDetail from '../containers/todo-detail';
 require('../../scss/style.scss');
 
 const App = () => (
     <div>
-        <h2>User List</h2>
-        <UserList />
+        <h2>Todo List</h2>
+        <TodoList />
         <hr />
-        <h2>User Details</h2>
-        <UserDetail />
+        <h2>Todo Details</h2>
+        <TodoDetail />
     </div>
 );
 
