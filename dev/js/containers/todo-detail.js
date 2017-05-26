@@ -16,6 +16,7 @@ class TodoDetail extends Component {
         <p>Date Completed: {this.props.todo.doneDate}</p>
         <p>Urgency: {this.props.todo.urgency}</p>
         <p>Importance: {this.props.todo.importance}</p>
+        <br />
         <p>Description: {this.props.todo.description}</p>
       </div>
     );
