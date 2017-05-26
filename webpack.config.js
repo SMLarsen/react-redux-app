@@ -11,11 +11,19 @@ module.exports = {
     entry: './dev/js/index.js',
     module: {
         loaders: [
-            {
-                test: /\.js$/,
-                loaders: ['babel'],
-                exclude: /node_modules/
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              cacheDirectory: true,
             },
+          },
+            // {
+            //     test: /\.js$/,
+            //     loaders: ['babel'],
+            //     exclude: /node_modules/
+            // },
             {
                 test: /\.scss/,
                 loader: 'style-loader!css-loader!sass-loader'
