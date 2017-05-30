@@ -7,7 +7,9 @@ import {selectTodo} from '../actions/index';
 class todoList extends Component {
 
   createListItems() {
-    return this.props.todos.map((todo) => {
+    console.log('this.props.todos:', this.props.todos.todos);
+
+    return this.props.todos.todos.map((todo) => {
       return (
         <li
           key={todo.id}
@@ -30,9 +32,7 @@ class todoList extends Component {
 }
 
 function mapStateToProps(state) {
-  return {
-    todos: state.todos
-  };
+  return state;
 }
 
 function mapDispatchToProps(dispatch) {
